@@ -11,8 +11,7 @@ namespace MVC_Grid_System.Web.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            BussinessLayer.Test test = new BussinessLayer.Test();
-            
+            BussinessLayer.Test test = new BussinessLayer.Test();       
             return View();
         }
 
