@@ -1,0 +1,16 @@
+﻿@model IEnumerable<MVC_Grid_System.Entites.Personel>
+
+@{
+    ViewBag.Title = "List";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<h2>Personel Listele</h2>
+
+<ul class="list-group">
+    @foreach (var item in Model)
+    {
+        <li class="list-group-item">@(item.Ad + " " + item.Soyad)</li>
+    }
+</ul>
+
